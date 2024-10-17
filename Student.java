@@ -13,8 +13,6 @@ public class Student
     {
         this.studentRollNo = studentRollNo;
     }
-    
-    // Corrected: Added missing setter method for studentName
     public void setStudentName(String studentName)
     {
         this.studentName = studentName;
@@ -24,7 +22,6 @@ public class Student
     {
         this.mobileNumber = mobileNumber;
     }
-    
     public void setSubjectMarks(int[] subjectMarks)
     {
         this.subjectMarks = subjectMarks;
@@ -47,7 +44,7 @@ public class Student
     }
 
     public static void main(String[] args){
-        // Corrected: Scanner object creation
+        
         Scanner scanner = new Scanner(System.in);
         Student student = new Student();
         
@@ -57,12 +54,12 @@ public class Student
 
         System.out.println("Enter Student Name: ");
         String studentName = scanner.nextLine();
-        // Corrected: Changed method to set studentName
+        
         student.setStudentName(studentName);
 
         System.out.println("Enter Student MobileNumber: ");
         String mobileNumber = scanner.nextLine();
-        // Corrected: Changed method to set mobileNumber
+        
         student.setMobileNumber(mobileNumber);
 
         System.out.println("Enter number of Subjects: ");
@@ -82,7 +79,7 @@ public class Student
 
         System.out.println("Student Roll No: " + student.getStudentRollNo());
         System.out.println("Student Name: " + student.getStudentName());
-        // Corrected: Changed print statement to show mobile number
+        
         System.out.println("Student Mobile Number: " + student.getMobileNumber());
         
         subjectMarks = student.getSubjectMarks();
